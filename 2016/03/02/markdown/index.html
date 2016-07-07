@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>Markdown简单用法 | 个人学习笔记</title>
+    <meta name="author" content="MaShuo">
+    
+    <meta name="description" content="Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="Markdown简单用法"/>
+    <meta property="og:site_name" content="夜雨清尘"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="夜雨清尘" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="container">
+            <a href="/" class="brand-logo hide-on-med-and-down">夜雨清尘</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            分类
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav" id="main-menu">
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4">
+                    <img class="avatar-image circle responsive-img" src="https://avatars2.githubusercontent.com/u/10173382?v=3&amp;s=460" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper">
+                    <div class="valign">
+                        <p class="name">夜雨清尘</p>
+                        <p class="desc">Web前端开发</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    分类
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav collection with-header" id="category-menu">
+        <li class="collection-header">
+            <h5 class="black-text">分类目录</h5>
+        </li>
+
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+    <main>
+        <div class="container main-container">
+    <nav>
+    <div class="nav-wrapper indigo lighten-1">
+        <span class="breadcrumb">当前位置（目录）</span>
+        
+            
+
+        
+        
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+            
+            <div class="article-title">
+                
+    
+        <h1>Markdown简单用法</h1>
+    
+
+
+            </div>
+            <time datetime="2016-03-01T16:00:00.000Z"><a href="/2016/03/02/markdown/">2016-03-02</a></time>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/学习/" class="article-tag green accent-4">学习</a>
+        
+            <a href="/tags/其它/" class="article-tag green accent-4">其它</a>
+        
+    </div>
+
+
+            <div class="toc hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#一、标题"><span class="section table-of-contents-text">一、标题</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#一级标题"><span class="section table-of-contents-text">一级标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#二级标题"><span class="section table-of-contents-text">二级标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#三级标题"><span class="section table-of-contents-text">三级标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#四级标题"><span class="section table-of-contents-text">四级标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#五级标题"><span class="section table-of-contents-text">五级标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-6"><a class="section table-of-contents-link" href="#六级标题"><span class="section table-of-contents-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#大标题"><span class="section table-of-contents-text">大标题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#小标题"><span class="section table-of-contents-text">小标题</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#二、强调"><span class="section table-of-contents-text">二、强调</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#三、列表"><span class="section table-of-contents-text">三、列表</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#四、分割线"><span class="section table-of-contents-text">四、分割线</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#五、引用"><span class="section table-of-contents-text">五、引用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#六、图片与链接"><span class="section table-of-contents-text">六、图片与链接</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#七、索引超链接"><span class="section table-of-contents-text">七、索引超链接</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#八、自动链接"><span class="section table-of-contents-text">八、自动链接</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#九、代码块"><span class="section table-of-contents-text">九、代码块</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#十、markdown注释"><span class="section table-of-contents-text">十、markdown注释</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#十一、转义字符"><span class="section table-of-contents-text">十一、转义字符</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#十二、其它"><span class="section table-of-contents-text">十二、其它</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#参考文献"><span class="section table-of-contents-text">参考文献</span></a></li></ol>
+</div>
+
+
+            <div class="entry">
+                <p>Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</p>
+<p><br></p>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><hr>
+<p><strong>1. Atx方式</strong><br>标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 # 号空格即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div><div class="line">##### 五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><br><br><strong>2. Setext方式</strong><br>文字下方使用三个连续等号（===）为简易的大标题格式，三个连续减号（—）为简易小标题格式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">大标题</div><div class="line">===</div><div class="line">小标题</div><div class="line">---</div></pre></td></tr></table></figure>
+<h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h1><h2 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h2><p><br><br></p>
+<h1 id="二、强调"><a href="#二、强调" class="headerlink" title="二、强调"></a>二、强调</h1><hr>
+<p>使用星号（*）或者底划线（_）加粗字体或者使用斜体字来强调文章内容以及段落。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">**字体加粗**</div><div class="line">__字体加粗__</div><div class="line">*斜体*</div><div class="line">_斜体_</div></pre></td></tr></table></figure>
+<p><strong>字体加粗</strong><br><strong>字体加粗</strong><br><em>斜体</em><br><em>斜体</em></p>
+<p><br><br></p>
+<h1 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h1><hr>
+<ul>
+<li>熟悉 HTML 的同学肯定知道有序列表与无序列表的区别，在 Markdown 下，列表的显示只需要在文字前加上减号 （-） 或 星号（ * ） 或加号（+）即可变为无序列表，有序列表则直接在文字前加 <code>1.</code> <code>2.</code> <code>3.</code>  <strong>符号要和文字之间加上一个字符的空格</strong>。</li>
+<li>-+*可循环使用可制作嵌套列表，但符号之后的空格不能少，符号之前的空格也不能少。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">**1. 无序列表：**</div><div class="line">*  无序列表</div><div class="line">*  无序列表</div><div class="line"></div><div class="line">-  无序列表</div><div class="line">-  无序列表</div><div class="line"></div><div class="line">+ 无序列表</div><div class="line">+ 无序列表</div><div class="line"></div><div class="line">**2. 嵌套列表：**</div><div class="line">* 嵌套列表</div><div class="line">  - 嵌套列表</div><div class="line">     + 嵌套列表</div><div class="line"></div><div class="line">**3. 有序列表：**</div><div class="line">1. 有序列表</div><div class="line">2. 有序列表</div></pre></td></tr></table></figure>
+<p><strong>1. 无序列表：</strong></p>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<p><strong>2.嵌套列表：</strong></p>
+<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>3.有序列表：</strong></p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<p><br><br></p>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><hr>
+<p>三个或更多-_*，必须单独一行（不可跟在文字下方——创建小标题方式已占用该方法），可含空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">___</div><div class="line">***</div></pre></td></tr></table></figure>
+<hr>
+<hr>
+<hr>
+<p><br><br></p>
+<h1 id="五、引用"><a href="#五、引用" class="headerlink" title="五、引用"></a>五、引用</h1><hr>
+<p>如果你需要引用一小段别处的句子，那么就要用引用的格式。只需要在文本前加入 &gt; 这种尖括号（大于号）即可（符号后的空格可不要）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">**1. 单层引用：**</div><div class="line">&gt;引用内容</div><div class="line"></div><div class="line">**2. 嵌套引用：**</div><div class="line">&gt; 引用内容</div><div class="line">  &gt;&gt; 嵌套引用内容</div></pre></td></tr></table></figure>
+<p><strong>1. 单层引用：</strong></p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<p><strong>2. 嵌套引用：</strong></p>
+<blockquote>
+<p>引用内容</p>
+<blockquote>
+<p>嵌套引用内容</p>
+</blockquote>
+</blockquote>
+<p><br><br></p>
+<h1 id="六、图片与链接"><a href="#六、图片与链接" class="headerlink" title="六、图片与链接"></a>六、图片与链接</h1><hr>
+<p>插入链接与插入图片的语法很像，区别在一个<code>!</code>号。</p>
+<p>插入图片的地址需要图床，这里推荐 CloudApp 的服务，生成URL地址即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">**1. 插入文字超链接：**</div><div class="line">[百度](http://www.baidu.com)</div><div class="line"></div><div class="line">**2. 插入图片超链接：**</div><div class="line">![图片](http://mouapp.com/Mou_128.png)</div><div class="line"></div><div class="line">**3. 插入可跳转的图片超链接（将图片超链接嵌入到文字超链接内即可）：**</div><div class="line">[![图片](http://mouapp.com/Mou_128.png)](http://www.baidu.com)</div></pre></td></tr></table></figure>
+<p><strong>1. 插入文字超链接：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<p><strong>2. 插入图片超链接：</strong><br><img src="http://mouapp.com/Mou_128.png" alt="图片"></p>
+<p><strong>3. 插入可跳转的图片超链接（将图片超链接嵌入到文字超链接内即可）：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external"><img src="http://mouapp.com/Mou_128.png" alt="图片"></a></p>
+<p><br><br></p>
+<h1 id="七、索引超链接"><a href="#七、索引超链接" class="headerlink" title="七、索引超链接"></a>七、索引超链接</h1><hr>
+<p>将连接地址以类似变量的方式保存起来（只能以数字索引方式保存），需要时引入即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[1]:http://www.baidu.com</div><div class="line">[2]:http://mouapp.com/Mou_128.png</div><div class="line"></div><div class="line">**1. 插入文字超链接：**</div><div class="line">[百度][1]</div><div class="line"></div><div class="line">**2. 插入图片超链接**</div><div class="line">![图片][2]</div><div class="line"></div><div class="line">**3. 插入可跳转的图片超链接**</div><div class="line">[![图片][2]][1]</div></pre></td></tr></table></figure>
+<p><strong>1. 插入文字超链接：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<p><strong>2. 插入图片超链接：</strong><br><img src="http://mouapp.com/Mou_128.png" alt="图片"></p>
+<p><strong>3. 插入可跳转的图片超链接：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external"><img src="http://mouapp.com/Mou_128.png" alt="图片"></a></p>
+<p><br><br></p>
+<h1 id="八、自动链接"><a href="#八、自动链接" class="headerlink" title="八、自动链接"></a>八、自动链接</h1><p>使用尖括号定义超链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;http://www.mashuo.win&gt;</div><div class="line">&lt;1601635063@qq.com&gt;</div></pre></td></tr></table></figure>
+<p><a href="http://www.mashuo.win" target="_blank" rel="external">http://www.mashuo.win</a><br><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#49;&#54;&#x30;&#x31;&#x36;&#51;&#x35;&#48;&#x36;&#51;&#64;&#113;&#113;&#46;&#x63;&#111;&#x6d;">&#49;&#54;&#x30;&#x31;&#x36;&#51;&#x35;&#48;&#x36;&#51;&#64;&#113;&#113;&#46;&#x63;&#111;&#x6d;</a></p>
+<p><br><br></p>
+<h1 id="九、代码块"><a href="#九、代码块" class="headerlink" title="九、代码块"></a>九、代码块</h1><hr>
+<p>如果你是个程序猿，需要在文章里优雅的引用代码块。</p>
+<p><strong>1. 单行代码块</strong><br>在 Markdown 下实现也非常简单，只需要用反引号（`）（esc下方、1左边的按键）把中间的代码包裹起来（使用 tab 键即可缩进）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">示例：</div><div class="line">`行内代码块`</div></pre></td></tr></table></figure>
+<p><code>行内代码块</code></p>
+<p><br><br><strong>2. 多行代码块</strong><br>只需要用三个反引号（```）（esc下方、1左边的按键）把中间的代码包裹起来，此种方式可以在三个符号后方加上程序语言来定义代码框内的代码风格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">js代码风格代码块：</div><div class="line">```js</div><div class="line">//js代码风格代码块</div><div class="line">var a = 1,b = 2;</div><div class="line">```</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">php代码风格代码块：</div><div class="line">```php</div><div class="line">//php代码风格代码块</div><div class="line">$a = 1;</div><div class="line">$b = 2;</div><div class="line">```</div></pre></td></tr></table></figure>
+<p>js代码风格代码块：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//js代码风格代码块</span></div><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>,b = <span class="number">2</span>;</div></pre></td></tr></table></figure></p>
+<p>php代码风格代码块：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//php代码风格代码块</span></div><div class="line">$a = <span class="number">1</span>;</div><div class="line">$b = <span class="number">2</span>;</div></pre></td></tr></table></figure></p>
+<p><br><br></p>
+<h1 id="十、markdown注释"><a href="#十、markdown注释" class="headerlink" title="十、markdown注释"></a>十、markdown注释</h1><hr>
+<p>用来为markdown文档添加注释（语法与html的注释相同）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!-- Markdown注释：这是加粗功能 --&gt;</div><div class="line">**加粗字体**</div></pre></td></tr></table></figure>
+<p><strong>加粗字体</strong></p>
+<p><br><br></p>
+<h1 id="十一、转义字符"><a href="#十一、转义字符" class="headerlink" title="十一、转义字符"></a>十一、转义字符</h1><hr>
+<p>为使markdown功能符号在html页面中显示为正常符号，有时我们需要使用转义功能来取消符号功能，转义符为（\）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">转义的有：</div><div class="line">\\ 反斜杠</div><div class="line">\` 反引号</div><div class="line">\* 星号</div><div class="line">\_ 下划线</div><div class="line">\&#123;\&#125; 大括号</div><div class="line">\[\] 中括号</div><div class="line">\(\) 小括号</div><div class="line">\# 井号</div><div class="line">\+ 加号</div><div class="line">\- 减号</div><div class="line">\. 英文句号</div><div class="line">\! 感叹号</div></pre></td></tr></table></figure>
+<p><br><br></p>
+<h1 id="十二、其它"><a href="#十二、其它" class="headerlink" title="十二、其它"></a>十二、其它</h1><hr>
+<p>markdown也可以直接使用html标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">**1. 插入文字超链接：**</div><div class="line">&lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;</div><div class="line"></div><div class="line">**2. 插入图片：**</div><div class="line">&lt;img src=&quot;http://mouapp.com/Mou_128.png&quot; title=&quot;图片&quot;&gt;</div><div class="line"></div><div class="line">**3. 插入带有超链接的图片：**</div><div class="line">&lt;a href=&quot;http://www.baidu.com&quot;&gt;&lt;img src=&quot;http://mouapp.com/Mou_128.png&quot; title=&quot;图片&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p><strong>1. 插入文字超链接：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<p><strong>2. 插入图片：</strong><br><img src="http://mouapp.com/Mou_128.png" title="图片"></p>
+<p><strong>3. 插入带有超链接的图片：</strong><br><a href="http://www.baidu.com" target="_blank" rel="external"><img src="http://mouapp.com/Mou_128.png" title="图片"></a></p>
+<p><br><br></p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><hr>
+<ol>
+<li><a href="http://lutaf.com/markdown-simple-usage.htm" target="_blank" rel="external">Markdown 简明语法</a></li>
+<li><a href="http://www.ituring.com.cn/article/3452" target="_blank" rel="external">Markdown之表格的处理</a></li>
+<li><a href="http://jianshu.io/p/q81RER" target="_blank" rel="external">献给写作者的 Markdown 新手指南</a></li>
+<li><a href="http://www.zybuluo.com/mdeditor" target="_blank" rel="external">Cmd Markdown 编辑阅读器</a></li>
+<li><a href="http://www.ituring.com.cn/article/504" target="_blank" rel="external">Markdown语法说明（详解版）</a></li>
+<li><a href="http://www.ituring.com.cn/article/23" target="_blank" rel="external">怎样使用Markdown</a></li>
+<li><a href="http://jianshu.io/p/PpDNMG" target="_blank" rel="external">Markdown写作浅谈</a></li>
+<li><a href="http://equation85.github.io/blog/markdown-examples" target="_blank" rel="external">Markdown语法示例</a></li>
+<li><a href="http://tool.oschina.net/commons?type=2" target="_blank" rel="external">HTML转义字符对照表</a></li>
+<li><a href="http://wowubuntu.com/markdown" target="_blank" rel="external">Markdown 语法说明(简体中文版)</a></li>
+</ol>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="markdown" data-title="Markdown简单用法" data-url="http://yoursite.com/2016/03/02/markdown/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'raytaylorlin'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large green">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect blue" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse orange"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m3 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="https://github.com/Mar-Max" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+            </div>
+            
+            
+            
+            <div class="col m9 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="https://github.com/raytaylorlin/hexo-theme-raytaylorism" target="_blank">raytaylorlin</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 raytaylorlin.com, All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
+</div>
+
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+(function($) {
+    $(document).ready(function() {
+        // 隐藏禁用javascript（针对微信内置浏览器）的提示
+        $('.noscript').hide();
+
+        // 图片缩放效果
+        var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+        // 给图片加上点击放大效果（materialbox插件）
+        $imgs.addClass('materialboxed')
+            .each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt'));
+            }).materialbox();
+
+        // 首页幻灯片
+        $('.slider').slider({
+            indicators: true,
+            full_width: true
+        });
+
+        $(".button-collapse").sideNav();
+        $(".category-menu").sideNav();
+
+        // 针对gallery post
+        $('.carousel').carousel({
+            full_width: true
+        });
+        $('.carousel-control.prev').click(function() {
+            $('.carousel').carousel('prev');
+        });
+        $('.carousel-control.next').click(function() {
+            $('.carousel').carousel('next');
+        });
+
+        // 文章目录
+        $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+        // 针对移动端做的优化：FAB按钮点击一下收回
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('.fixed-action-btn').addClass('click-to-toggle');
+        }
+        // 回到顶部
+        $('.btn-return-top').click(function() {
+            $('body, html').animate({
+                scrollTop: 0
+            }, 500);
+        });
+
+        // 重置读书页面的Tab标签页的颜色
+        $('li.tab a').hover(function() {
+            $(this).toggleClass('text-lighten-4');
+        });
+        $('.indicator').addClass('green lighten-2');
+
+        // 添加new标签
+        $('.menu-reading,.menu-about').append('<span class="new badge pink"></span>');
+    });
+})(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</body>
+</html>
